@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) . ' - ' . APP_NAME : APP_NAME; ?></title>
 
-    <!-- Bootstrap CSS -->
-    <link href="<?php echo APP_URL; ?>css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap RTL CSS -->
+    <link href="<?php echo APP_URL; ?>css/bootstrap.rtl.min.css" rel="stylesheet">
 
-    <!-- Custom CSS (if any) -->
-    <!-- <link href="<?php echo APP_URL; ?>css/style.css" rel="stylesheet"> -->
+    <!-- Vazirmatn Font from CDN -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom CSS (if any, ensure it's RTL compatible or add RTL specific styles) -->
+    <link href="<?php echo APP_URL; ?>css/style.css" rel="stylesheet">
+    <!-- <link href="<?php echo APP_URL; ?>css/style-rtl.css" rel="stylesheet"> -->
 
     <!-- TODO: Add any other global head elements, like favicons, custom fonts, etc. -->
 </head>

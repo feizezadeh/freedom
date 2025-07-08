@@ -1,0 +1,18 @@
+/* Custom styles for the application */
+/* Add any global custom styles or overrides here */
+
+/* Ensure body takes Vazirmatn font if not already set by inline style or more specific selectors */
+body {
+    font-family: 'Vazirmatn', Arial, sans-serif !important; /* !important to override Bootstrap if necessary, though inline style in main.php is more direct */
+}
+
+/* Example: You might want to apply the font to form elements explicitly too */
+input, textarea, select, button {
+    font-family: 'Vazirmatn', Arial, sans-serif;
+}
+
+/* You can define specific weights if needed for headings, etc. */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Vazirmatn', Arial, sans-serif;
+    /* font-weight: bold; */ /* Example: if you want all headings to use the bold weight of Vazirmatn */
+}

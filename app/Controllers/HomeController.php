@@ -8,9 +8,10 @@ class HomeController extends Controller {
 
     public function index() {
         // Data to pass to the view
+        $appName = defined('APP_NAME_FA') ? APP_NAME_FA : APP_NAME;
         $data = [
-            'pageTitle' => 'Welcome Home',
-            'welcomeMessage' => 'Welcome to ' . APP_NAME . '! Your journey to better health starts here.'
+            'pageTitle' => 'صفحه اصلی',
+            'welcomeMessage' => 'به ' . $appName . ' خوش آمدید! سفر شما به سوی سلامتی بهتر از اینجا آغاز می‌شود.'
         ];
 
         // Render the view within the main layout

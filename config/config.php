@@ -11,6 +11,7 @@ define('DB_CHARSET', 'utf8mb4');        // Database charset
 
 // --- Application Settings ---
 define('APP_NAME', 'Doktoryab Clone');
+define('APP_NAME_FA', 'دکتریاب کلون'); // Persian name for the application
 define('APP_ENV', 'development'); // 'development', 'production', 'testing'
 
 // Base URL of the application (important for links, assets, redirects)

@@ -3,32 +3,34 @@
 // It will be injected into the $contentForLayout variable in layouts/main.php
 ?>
 
-<div class="jumbotron mt-5">
-    <h1 class="display-4">
-        <?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : 'Homepage'; ?>
-    </h1>
-    <p class="lead">
-        <?php echo isset($welcomeMessage) ? htmlspecialchars($welcomeMessage) : 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.'; ?>
-    </p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> <!-- TODO: Update link -->
+<div class="jumbotron mt-5"> <?php // In Bootstrap 5, jumbotron class is removed, use bg-light p-5 rounded for similar effect ?>
+    <div class="bg-light p-5 rounded">
+        <h1 class="display-4">
+            <?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : 'صفحه اصلی'; ?>
+        </h1>
+        <p class="lead">
+            <?php echo isset($welcomeMessage) ? htmlspecialchars($welcomeMessage) : 'این یک واحد قهرمان ساده است، یک جزء ساده به سبک جامبوترون برای جلب توجه بیشتر به محتوای ویژه یا اطلاعات.'; ?>
+        </p>
+        <hr class="my-4">
+        <p>این پلتفرم از کلاس‌های کاربردی برای تایپوگرافی و فاصله‌گذاری برای ایجاد فضای مناسب بین محتوا در کانتینر بزرگتر استفاده می‌کند.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">بیشتر بدانید</a> <!-- TODO: Update link -->
+    </div>
 </div>
 
 <div class="row mt-5">
     <div class="col-md-4">
-        <h2>Find Doctors</h2>
-        <p>Easily search for doctors by specialty, location, insurance, and more. View detailed profiles and patient reviews to make informed decisions.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Search Doctors &raquo;</a></p> <!-- TODO: Update link -->
+        <h2>جستجوی پزشکان</h2>
+        <p>به راحتی پزشکان را بر اساس تخصص، موقعیت مکانی، بیمه و موارد دیگر جستجو کنید. پروفایل‌های دقیق و نظرات بیماران را مشاهده کنید تا تصمیمات آگاهانه‌ای بگیرید.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">جستجوی پزشکان &raquo;</a></p> <!-- TODO: Update link -->
     </div>
     <div class="col-md-4">
-        <h2>Book Appointments</h2>
-        <p>Check real-time availability and book your appointments online with instant confirmation. Get reminders for your upcoming visits.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Book Now &raquo;</a></p> <!-- TODO: Update link -->
+        <h2>رزرو نوبت</h2>
+        <p>دسترسی بی‌درنگ پزشکان را بررسی کرده و نوبت‌های خود را به صورت آنلاین با تأیید فوری رزرو کنید. یادآوری‌هایی برای ویزیت‌های آینده خود دریافت کنید.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">هم‌اکنون رزرو کنید &raquo;</a></p> <!-- TODO: Update link -->
     </div>
     <div class="col-md-4">
-        <h2>Insurance Integration</h2>
-        <p>Verify your insurance coverage and understand your benefits. Our platform aims to simplify the financial aspects of healthcare.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Learn More &raquo;</a></p> <!-- TODO: Update link -->
+        <h2>یکپارچه‌سازی با بیمه</h2>
+        <p>پوشش بیمه خود را تأیید کرده و مزایای آن را درک کنید. پلتفرم ما با هدف ساده‌سازی جنبه‌های مالی مراقبت‌های بهداشتی ایجاد شده است.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">بیشتر بدانید &raquo;</a></p> <!-- TODO: Update link -->
     </div>
 </div>
